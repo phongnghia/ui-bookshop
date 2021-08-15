@@ -1,0 +1,107 @@
+/* Modal single product */
+
+.modal__popup{
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #2d2d2da8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'poppins',sans-serif;
+}
+.modal__product{
+  width: 60%;
+  position: relative;
+  overflow: hidden;
+  padding: 50px 20px;
+  background: white;
+  border-radius: 2px;
+}
+.modal__img img{
+  width: 100%;
+}
+.close__modal{
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  padding: 15px;
+}
+
+/* Modal search */
+
+.search {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  background: #000000e3;
+  display: none;
+  font-family: 'Poppins', sans-serif;
+}
+.search .input-group{
+  border-bottom: 3px solid white;
+}
+.search .close-search {
+  color: white;
+  float: right;
+  font-size: 30px;
+  margin-top: 100px;
+  margin-right: 50px;
+  cursor: pointer; 
+}
+
+.search form {
+  margin: 16em 16em 1em 16em;
+}
+
+.search form input {
+  border: none;
+  background: none;
+  color: white; 
+}
+
+.search form .input-group-append button {
+  color: white;
+}
+.search form .input-group-append button:focus{
+  outline: none;
+  box-shadow: none;
+}
+
+.search form input::-webkit-input-placeholder {
+  color: white; 
+}
+
+.search form input:focus {
+  background: none;
+  color: #f1f1f1;
+  box-shadow: none;
+  border-color: #ce7852;
+}
+.result__search{
+  margin: 0em 16em 0 16em;
+  padding: 1em;
+  background: white;
+  border-radius: 5px;
+}
+.result__search h5{
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.list__result ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.list__result ul li a{
+  display: block;
+  padding: 10px 10px 10px 0;
+  color: #353535;
+}

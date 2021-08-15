@@ -1,0 +1,190 @@
+@media (min-width: 1200px){
+	.container, .container-lg, .container-md, .container-sm, .container-xl {
+	    max-width: 1120px;
+	}
+}
+body{
+	font-family: 'Poppins', sans-serif;
+}
+.account{
+	display: flex;
+}
+.account__img{
+	width: 15%;
+    border: 1px solid;
+    border-radius: 106px;
+    overflow: hidden;
+    padding: 10px;
+}
+.account__img img{
+	width: 100%;
+    display: block;
+    border-radius: 50%;
+}
+.account__text{
+	width: 85%;
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid #ce7852;
+}
+.account__text label{
+	color: #353535;
+	font-size: 23px;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+}
+
+.account__menu ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.account__menu ul li a{
+	color: #353535;
+	display: block;
+	font-family: 'Poppins', sans-serif;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: 400;
+	padding: 20px;
+	background: #efefef;
+    border-bottom: 1px solid #e2e2e2;
+}
+.account__menu ul li a:hover{
+	border-left: 5px solid #ce7852;
+	background: white;
+}
+.account__menu ul li .logout{
+	color: red;
+}
+.account__menu ul li  .active{
+	border-left: 5px solid #ce7852;
+	background: white;
+}
+
+.account__title{
+	padding: 5px;
+}
+.account__title label{
+	font-size: 20px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+.account__infor label{
+	width: 30%;
+	font-weight: 500;
+}
+.account__infor span{
+	width: 70%;
+	font-size: 14px;
+}
+
+
+.account__image img{
+	width: 80%;
+}
+.account__image input{
+	width: 100%;
+	padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #6a6a6b;
+}
+
+
+.account__bill table{
+	width: 100%;
+}
+.account__bill table thead{
+	border: 1px solid #4f5152;
+	background: #ce7852;
+	color: white;
+}
+.account__bill table thead tr th{
+	font-size: 13px;
+	font-weight: 200;
+	padding: 10px;
+	border-left: 1px solid #4f5152;
+}
+.account__bill table tbody{
+	border-right: 1px solid #4f5152;
+    border-left: 1px solid #4f5152;
+    border-bottom: 1px solid #4f5152;
+}
+.account__bill table tbody tr td{
+	padding: 15px;
+	font-size: 12px;
+	border-right: 1px solid #4f5152;
+}
+.account__bill table tbody tr{
+	border-bottom: 1px solid #4f5152;
+}
+.account__bill table tbody tr a:hover{
+	color: white;
+}
+.btn__view{
+	background: var(--warning);
+	color: white;
+	font-size: 13px;
+}
+.btn__edit{
+	background: var(--primary);
+    color: white;
+    font-size: 13px;
+}
+.btn__delete{
+	background: red;
+    color: white;
+    font-size: 13px;
+}
+
+.account__edit label{
+	width: 30%;
+}
+.account__edit input{
+	width: 70%;
+	padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #6a6a6b;
+}
+.account__edit button{
+	border: none;
+    padding: 10px 25px;
+    background: #ce7852;
+    color: white;
+}
+.account__edit input,
+.account__edit button{
+	outline: none;
+}
+.edit__alert span{
+	font-size: 14px;
+}
+
+.account__infor, .account__image, .account__bill, .account__edit{
+	display: none;
+}
+.account__active{
+	display: block;
+}
+
+/* Details bill */
+
+.title__details__bill{
+	padding: 5px;
+}
+.title__details__bill label{
+	font-size: 20px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+.title__bill label{
+	font-size: 20px;
+    font-weight: 400;
+}
+.title__single__bill label{
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.panel__bill label{
+	font-size: 15px;
+}

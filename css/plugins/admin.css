@@ -1,0 +1,229 @@
+body{
+	font-family: 'poppins',sans-serif;
+}
+.admin{
+	display: flex;
+	align-items: center;
+}
+.col-admin-3{
+	width: 20%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	background: #d0d0d0;
+}
+.col-admin-9{
+	margin-left: 20%;
+	width: 80%;
+	padding: 20px;
+}
+
+/* Menu */
+
+.admin__menu hr{
+	width: 60%;
+}
+.admin__title{
+	text-align: center;
+	border-bottom: 1px solid #bbbbbb;
+}
+.admin__title h5{
+	font-size: 30px;
+	text-transform: uppercase;
+	font-weight: 900;
+	margin: 0;
+}
+.admin__title h5 span{
+	color: #ce7852;
+}
+.admin__avt{
+	text-align: center;
+}
+.admin__avt img{
+	width: 100px;
+    padding: 5px;
+    border-radius: 50px;
+    border: 1px solid #ce7852;
+    background: white;
+}
+.admin__text label{
+	color: #212529;
+}
+
+
+.admin__list ul{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.admin__list ul li a{
+	display: block;
+	color: #353535;
+	text-decoration: none;
+	font-size: 14px;
+	padding: 20px 20px;
+	transition: .3s;
+}
+.admin__list ul li .admin__logout{
+	color: red;
+}
+.admin__list ul li .admin__logout:hover{
+	color: red;
+}
+.admin__list ul li a:hover{
+	color: #ce7852;
+	transition: .3s;
+}
+.admin__list ul li .admin__active{
+	background: #ce7852;
+	color: white;
+}
+.admin__list ul li .admin__active:hover{
+	color: white;
+}
+.copyright{
+	position: absolute;
+    bottom: 0;
+    text-align: center;
+    overflow: hidden;
+    right: 0;
+    left: 0;
+}
+.copyright label{
+	font-size: 11px;
+}
+
+
+
+/* Content */
+
+.content__title{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1px 0 15px 0;
+}
+.content__title h5{
+	font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.content__admin span{
+	font-size: 14px;
+}
+.admin__home img{
+	width: 30%;
+}
+.admin__product, .admin__bill, .admin__user{
+	display: none;
+}
+
+/* Home */
+
+
+/* Admin product */
+
+.admin__product__title{
+	font-size: 20px;
+	font-weight: 700;
+	color: #353535;
+}
+.product__single form input,
+.product__details form input,
+.product__details form textarea,
+.product__single form select,
+.product__details form select{
+	padding: 5px;
+    margin: 0 10px;
+    width: 30%;
+    font-size: 14px;
+}
+.product__single form label,
+.product__details form label{
+	width: 15%;
+	font-size: 14px;
+}
+.product__single form input:focus,
+.product__details form input:focus,
+.product__details form textarea:focus,
+.product__single form select:focus,
+.product__details form select:focus{
+	outline: none;
+}
+.product__single form input[type="file"]{
+	border: 1px solid #4f5152;
+	border-radius: 5px;
+	width: 33%;
+}
+.product__single form input[type="submit"],
+.product__details form input[type="submit"]{
+	padding: 10px;
+    width: 15%;
+    background: #ce7852;
+    border: none;
+    color: white;
+    font-size: 14px;
+    margin: 0;
+}
+
+
+.list__product,
+.list__bill,
+.list__user{
+	padding: 5px;
+}
+.list__product table,
+.list__bill table,
+.list__user table{
+	width: 100%;
+}
+.list__product table thead,
+.list__bill table thead,
+.list__user table thead{
+	border: 1px solid #4f5152;
+	background: #ce7852;
+	color: white;
+}
+.list__product table tbody,
+.list__bill table tbody,
+.list__user table tbody{
+	border-right: 1px solid #4f5152;
+    border-left: 1px solid #4f5152;
+    border-bottom: 1px solid #4f5152;
+}
+.list__product table thead tr th,
+.list__product table tbody tr td,
+.list__bill table thead tr th,
+.list__bill table tbody tr td,
+.list__user table thead tr th,
+.list__user table tbody tr td{
+	padding: 15px;
+	font-size: 12px;
+	border-right: 1px solid #4f5152;
+}
+.list__product table tbody tr,
+.list__bill table tbody tr,
+.list__user table tbody tr{
+	border-bottom: 1px solid #4f5152;
+}
+.list__product table tbody tr a:hover,
+.list__bill table tbody tr a:hover,
+.list__user table tbody tr a:hover{
+	color: white;
+}
+.btn__view{
+	background: var(--warning);
+	color: white;
+	font-size: 13px;
+}
+.btn__edit{
+	background: var(--primary);
+    color: white;
+    font-size: 13px;
+}
+.btn__delete{
+	background: red;
+    color: white;
+    font-size: 13px;
+}

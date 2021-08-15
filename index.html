@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BookShop</title>
+	<!-- Favicons -->
+	<link rel="shortcut icon" href="image/logo/sm_logo/logo.png">
+
+	<!-- Google font (font-family: 'Roboto', sans-serif; Poppins ; Satisfy) -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,600,600i,700,700i,800" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+
+	<!-- Font-awesome --> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Bootstrap 4 -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+	<!-- Slick -->
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="css/slick.css">
+
+	<!-- scss,css -->
+	<link rel="stylesheet" type="text/css" href="css/plugins/modal.css">
+	<link rel="stylesheet" type="text/css" href="css/plugins/default.css">
+	<link rel="stylesheet" type="text/css" href="css/plugins/product.css">
+
+	<!-- Modernizr -->
+	<script src="js/vendor/modernizr-3.5.0.min.js"></script>
+</head>
+<body>
+	
+	<!-- Header -->
+	<header class="container-fluid header">
+		<div class="row header__sticky">
+			<div class="col-sm-3 header__logo">
+				<h5>BookShop</h5>
+			</div>
+			<div class="col-sm-6 header__menu">
+				<ul>
+					<li><a href="index.html">Trang chủ</a></li>
+					<li>
+						<a href="#">Tủ Sách</a>
+						<div class="menu__dropdown menu_1 row">
+							<div class="col-sm-4">
+								<h5 class="py-3 border-bottom">Sách trong nước</h5>
+								<ul>
+									<li><a href="shop-grid.html?t=VH_TN">Văn học trong nước</a></li>
+									<li><a href="shop-grid.html?t=TSHK">Tiểu sử - Hồi ký</a></li>
+									<li><a href="shop-grid.html?t=KTE_TLH">Kinh tế - Tâm lý học</a></li>
+									<li><a href="shop-grid.html?t=GKTK">Giáo khoa - Tham khảo</a></li>
+									<li><a href="shop-grid.html?t=NNGU">Ngoại ngũ</a></li>
+								</ul>
+							</div>
+							<div class="col-sm-4">
+								<h5 class="py-3 border-bottom">Sách nước ngoài</h5>
+								<ul>
+									<li><a href="shop-grid.html?t=VH_NN">Văn học nước ngoài</a></li>
+									<li><a href="shop-grid.html?t=QLKD">Quản lý kinh doanh</a></li>
+									<li><a href="shop-grid.html?t=KHVT">Khoa học - Viễn tưởng</a></li>
+								</ul>
+							</div>
+							<div class="col-sm-4">
+								<h5 class="py-3 border-bottom">Văn phòng phẩm</h5>
+								<ul>
+									<li><a href="shop-grid.html?t=">Dụng cụ học sinh</a></li>
+									<li><a href="shop-grid.html?t=">Dụng cụ văn phòng</a></li>
+									<li><a href="shop-grid.html?t=">Dụng cụ vẽ</a></li>
+									<li><a href="shop-grid.html?t=">Sản phẩm khác</a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="#">Trẻ em</a>
+						<div class="menu__dropdown menu_2 row">
+							<div class="col-sm-6">
+								<h5 class="py-3 border-bottom">Top truyện tranh</h5>
+								<ul>
+									<li><a href="shop-grid.html">American Girl</a></li>
+									<li><a href="shop-grid.html">Diary Wimpy Kid</a></li>
+									<li><a href="shop-grid.html">Harry Potter</a></li>
+									<li><a href="shop-grid.html">Doraemon - Conan</a></li>
+									<li><a href="shop-grid.html">Finding Dory</a></li>
+								</ul>
+							</div>
+							<div class="col-sm-6">
+								<h5 class="py-3 border-bottom">Khác</h5>
+								<ul>
+									<li><a href="shop-grid.html">Sách giáo dục</a></li>
+									<li><a href="shop-grid.html">Sách khoa học</a></li>
+								</ul>
+							</div>
+						</div>	
+					</li>
+					<li>
+						<a href="#">Page</a>
+						<div class="menu__dropdown menu_2 row">
+							<div class="col-sm-6">
+								<h5 class="py-3 border-bottom">Thông tin</h5>
+								<ul>
+									<li><a href="">Tài khoản của bạn</a></li>
+									<li><a href="">Giỏ hàng</a></li>
+									<li><a href="">Về chúng tôi</a></li>
+								</ul>
+							</div>
+							<div class="col-sm-6">
+								<h5 class="py-3 border-bottom">Mạng xã hội</h5>
+								<ul>
+									<li><a href="">Fanpage</a></li>
+									<li><a href="">Instagram</a></li>
+									<li><a href="">Twitter</a></li>
+									<li><a href="">Youtube</a></li>
+									<li><a href="">Gmail</a></li>
+								</ul>
+							</div>
+						</div>	
+					</li>
+					<li><a href="contacts.html">Liên hệ</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-3 header__bar">
+				<ul>
+					<li>
+						<i class="fa fa-search btn__search" aria-hidden="true"></i>
+					</li>
+					<li class="position-relative">
+						<i class="fa fa-shopping-cart" aria-hidden="true">
+							<div class="cart__average"></div>
+						</i>
+						<div class="menu__dropdown menu_cart">
+							<h5 class="py-3 border-bottom">Giỏ hàng</h5>
+							<div class="list__cart py-2">
+							</div>
+							<div class="pt-2 pb-2 mx-3 cart__sum">
+							</div>
+						</div>	
+					</li>
+					<li>
+						<i class="fa fa-user" aria-hidden="true"></i>
+						<div class="menu__dropdown menu_i">
+							<div class="">
+								<h5 class="py-3 border-bottom">Tài khoản của bạn</h5>
+								<ul>
+									<li><a href="">Thông tin tài khoản</a></li>
+									<li><a href="">Giỏ hàng</a></li>
+									<li><a href="">Thay đổi thông tin</a></li>
+									<li><a href="register.html">Đăng nhập / Đăng ký</a></li>
+									<li><a href="" style="color: red">Đăng xuất</a></li>
+								</ul>
+							</div>
+						</div>	
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<div class="header__banner bg__1">
+		<div class="header__title">
+			<h5>Book<span>Shop</span></h5>
+			<label>Mua <span>ngay</span></label>
+			<label>Sách bạn <span>yêu thích</span></label>
+			<label>Tại <span>đây</span></label>
+			<a href="#sale_pr">Xem ngay <i class="fa fa-arrow-right ml-2" aria-hidden="true"></i></a>
+		</div>
+	</div>
+
+	<!-- Slide sale product -->
+	<div class="container py-5" id="sale_pr">
+		<div class="title__wn sale_pr text-center pb-3">
+			<h4>Sách <span>giảm giá</span></h4>
+			<p>Những cuốn sách hay nên đọc. Sách được viết bởi những tác giả trẻ, những bộ óc văn học vĩ đại nhất, họ có những chủ đề, nhân vật, kinh nghiệm, cảm xúc và quan điểm sống luôn liên quan đến mỗi người chúng ta.</p>
+		</div>
+		<div class="list__sale py-3">
+		</div>
+	</div>
+
+	<!-- register email for web -->
+
+	<div class="container-fluid py-4 with__us">
+		<div class="row">
+			<div class="col-sm-6 offer__us">
+				<div class="offer__us__title text-center pb-3">
+					<h4>Đăng ký <span>nhận tin</span></h4>
+					<p>Đăng ký các bản tin của chúng tôi ngay bây giờ và luôn cập nhật các bộ sưu tập mới, các lookbook mới nhất và các ưu đãi độc quyền</p>
+				</div>
+				<div class="offer__us__input">
+					<form action="">
+						<input type="email" name="email" placeholder="Nhập email của bạn" required>
+						<input type="submit" name="submit" value="Đăng ký">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container py-4">
+		<div class="title__wn sale_pr text-center pb-3">
+			<h4>Tất cả <span>Sản phẩm</span></h4>
+			<p>Có rất nhiều các Top sách hay nổi tiếng trên thế giới mà các bạn nên đọc. Chúng tôi sẽ giới thiệu những cuốn sách mà bút lực của người viết đã vượt qua được giới hạn thể loại và đối tượng độc giả ban đầu họ muốn nhắm đến, chính vì vậy các sách hay này xứng đáng để mọi người tìm đọc.</p>
+		</div>
+		<div class="menu__product py-3">
+			<ul>
+				<li><a class="active__menu" href="#ALL" onclick="btnProduct(this)">Tất cả</a></li>
+				<li><a href="#STN" onclick="btnProduct(this)">Sách trong nước</a></li>
+				<li><a href="#SNN" onclick="btnProduct(this)">Sách nước ngoài</a></li>
+				<li><a href="#OTHER" onclick="btnProduct(this)">Khác</a></li>
+			</ul>
+		</div>
+		<div class="all__product py-4"></div>
+		<div class="view__more">
+			<a href="#">xem thêm</a>
+		</div>
+	</div>
+
+	<div class="container py-4">
+		<div class="title__wn sale_pr text-center pb-3">
+			<h4>Tác giả <span>Nổi tiếng</span></h4>
+			<p>Thế giới văn chương rất rộng lớn với sự xuất hiện của những tác phẩm kinh điển cùng các tác giả có tầm ảnh hưởng. Nếu yêu thích dòng văn học trong nước vào thế kỷ 20 hay ngày nay, bạn đọc hãy cùng BookShop điểm qua các tác giả nổi tiếng trong giai đoạn này.</p>
+		</div>
+		<div class="row py-3 author__major">
+			
+		</div>
+	</div>
+
+
+	<footer class="container-fluid pt-4">
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="footer__logo">
+					<h5>Book<span>Shop</span></h5>
+					<p>Một sản phẩm được thực hiện bởi nhóm 5, sản phẩm là một website bán sách online, giao diện được thiết kế phù hợp với mọi người.</p>
+				</div>
+				<div class="footer__address">
+					<div class="pt-3">
+						<span class="mb-2"><i class="mr-2 fa fa-map-marker" aria-hidden="true"></i> 980 Phan Đình Phùng, TP.Quảng Ngãi </span><br>
+						<span class="mb-2"><i class="mr-2 fa fa-google-plus" aria-hidden="true"></i> phamhongnghia13579@gmail.com </span><br>
+						<span class="mb-2"><i class="mr-2 fa fa-phone-square" aria-hidden="true"></i> 0356156445 </span>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3 footer__text">
+				<div class="offer__us__title pb-3">
+					<h4>Về chúng tôi</h4>
+				</div>
+				<ul>
+					<li><a href="#">Trang chủ</a></li>
+					<li><a href="#">Liên hệ</a></li>
+					<li><a href="#">Chính sách</a></li>
+					<li><a href="#">Hình thức thanh toán</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-3 footer__social">
+				<div class="offer__us__title pb-3">
+					<h4>Mạng xã hội</h4>
+				</div>
+				<ul>
+					<li><a href="">Fanpage</a></li>
+					<li><a href="">Instagram</a></li>
+					<li><a href="">Twitter</a></li>
+					<li><a href="">Youtube</a></li>
+					<li><a href="">Gmail</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="container pt-3 pb-2 footer__copyright text-center">
+			<span>@Copyright. Pham Hong Nghia 2021</span>
+		</div>
+	</footer>
+
+	<div class="alert__cart"></div>
+	
+	<!-- Popup Search content -->
+
+	<div class="container-fluid search">
+		<i class="fa fa-times btn close-search" aria-hidden="true"></i>
+		<form class="d-flex">
+			<div class="input-group">
+				<input class="form-control" type="text" placeholder="Tìm kiếm...">
+				<div class="input-group-append">
+					<button class="btn" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+				</div>
+			</div>
+		</form>
+		<div class="result__search">
+			<h5 class="border-bottom">Kết quả tìm kiếm</h5>
+			<div class="list__result">
+				<ul>
+					<li><a href="">Đắc nhân tâm</a></li>
+					<li><a href="">Đô nam trung</a></li>
+					<li><a href="">Vui vẻ không quạu</a></li>
+					<li><a href="">Đố vui kiếm thưởng</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- JavaScript, Bootstrap 4, slick, data -->
+	<script src="js/vendor/jquery-3.2.1.min.js"></script>
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/vendor/data.js"></script>
+	<!-- JavaScript Custom -->
+	<script src="js/product.js"></script>
+	<script src="js/cart.js"></script>
+	<script src="js/animation.js"></script>
+</body>
+</html>

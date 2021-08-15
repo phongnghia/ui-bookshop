@@ -1,0 +1,59 @@
+.single__title span{
+	font-family: 'Poppins', sans-serif;
+	font-size: 13px;
+}
+.feedback__input{
+	display: flex;
+}
+.feedback__input .input__img img{
+	width: 3em;
+	border-radius: 40px;
+}
+.form__feedback{
+	width: 50%;
+}
+.form__feedback textarea{
+	width: 100%;
+	height: 90px;
+	border-radius: 3px;
+	border: 1px solid black;
+	font-family: 'Poppins', sans-serif;
+}
+.form__feedback textarea:focus{
+	outline: none;
+}
+.form__feedback input[type="button"]{
+	width: 20%;
+    border: none;
+    background: #ce7852;
+    color: white;
+    font-family: 'Poppins',sans-serif;
+    padding: 7px;
+}
+.form__feedback input[type="button"]:focus{
+	outline: none;
+}
+
+.feedback__block{
+	display: flex;
+	font-family: 'Poppins', sans-serif;
+}
+.feedback__img{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.feedback__img img{
+	width: 3em;
+	border-radius: 40px;
+}
+.feedback__user label{
+	font-weight: 600;
+}
+.feedback__opinion p{
+	font-size: 14px;
+}
+.feedback__day span{
+	font-size: 12px;
+    font-style: italic;
+}

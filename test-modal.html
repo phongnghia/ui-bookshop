@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        .modal__delete {
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background: rgb(79, 76, 76);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: .5s;
+        }
+        
+        .modal__dialog {
+            width: 25%;
+            border-radius: 5px;
+            background: white;
+            padding: 2em;
+            position: relative;
+        }
+        
+        .modal__dialog__close {
+            position: absolute;
+            right: 1%;
+            top: 1%;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        
+        .modal__dialog__header h4 {
+            font-size: 18px;
+            text-align: center;
+        }
+        
+        .btn__phone {
+            position: fixed;
+            bottom: 5%;
+            right: 5%;
+            display: block;
+            padding: 10px 19px;
+            font-size: 25px;
+            border-radius: 50%;
+            background: #ce7852;
+            color: white;
+        }
+        
+        .btn__phone:hover {
+            color: white;
+        }
+        
+        .popup__contact label {
+            position: fixed;
+            bottom: 16%;
+            right: 2%;
+            padding: 10px;
+            margin: 0;
+            font-size: 13px;
+            background: #ce7852;
+            color: white;
+            border-radius: 19px;
+            font-family: 'poppins', sans-serif;
+        }
+        
+        .popup__contact label::after {
+            content: "";
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: #ce7852;
+            right: 45%;
+            bottom: -5px;
+            transform: rotate( 45deg);
+        }
+        
+        .popup__contact label i {
+            position: absolute;
+            top: -7px;
+            color: #ff0000;
+            right: 0px;
+            font-size: 20px;
+            background: white;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <button class="btn btn-danger btn-delete rounded-0">Xóa</button>
+    </div>
+
+    <div class="modal__delete">
+    </div>
+    <div>
+        <a href="tel:5558920234" onclick="ga('send', 'event', { eventCategory: 'Contact', eventAction: 'Call', eventLabel: 'Mobile Button'});">
+            <p class="call-button">Click to Call</p>
+        </a>
+    </div>
+    <div class="popup__contact">
+        <label>Liên hệ với chúng tôi !<i class="fa fa-times-circle btn__close__phone" aria-hidden="true"></i></label>
+        <a class="btn__phone" href="tel:0356156445"><i class="fa fa-phone" aria-hidden="true"></i></a>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function() {
+            // document.querySelector(".btn-click").addEventListener("click", function() {
+            //     $(".modal__delete").empty();
+            //     var el = $(`
+            //         <div class="modal__dialog">
+            //             <div class="modal__dialog__close" onclick="btnClose()"><i class="fa fa-times" aria-hidden="true"></i></div>
+            //             <div class="modal__dialog__header pt-2">
+            //                 <h4>Bạn có muốn xóa sản phẩm này ?</h4>
+            //             </div>
+            //             <div class="modal__dialog__body pt-3">
+            //                 <div class="d-flex align-items-center justify-content-center">
+            //                     <button class="btn btn-danger rounded-0 mx-2">Không</button>
+            //                     <button class="btn btn-success rounded-0 mx-2">Có</button>
+            //                 </div>
+            //             </div>
+            //         </div>
+            //     `);
+            //     $(".modal__delete").append(el);
+            //     $(".modal__delete").css({
+            //         "opacity": "1",
+            //         "visibility": "visible",
+            //         "transition": ".5s"
+            //     });
+            // });
+            document.querySelector(".btn__close__phone").addEventListener("click", function() {
+                $(".popup__contact label").css({
+                    "opacity": "0",
+                    "visibility": "visible",
+                    "transition": ".5s"
+                });
+            });
+        });
+
+        function btnClose() {
+            $(".modal__delete").removeAttr("style");
+            $(".modal__delete").empty();
+        }
+    </script>
+
+</body>
+
+</html>

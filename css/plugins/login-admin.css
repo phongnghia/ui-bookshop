@@ -1,0 +1,45 @@
+.form__admin{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.title__custom h5{
+	text-transform: uppercase;
+	font-size: 30px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+.title__custom h5 span{
+	color: #ce7852;
+}
+.form__register{
+	 font-family: 'Poppins', sans-serif;
+	 padding: 20px 35px;
+	 border: 1px solid;
+}
+.form__register label{
+	font-size: 14px;
+}
+.form__register input[type="text"],
+.form__register input[type="password"],
+.form__register input[type="email"]{
+	width: 100%;
+	padding: 5px;
+	border: 1px solid #61616199;
+}
+.form__register input:focus{
+	outline: none;
+}
+.form__register input[type="submit"]{
+	margin: 20px 0;
+    padding: 10px;
+    width: 25%;
+    border: none;
+    color: white;
+    background: #ce7852;
+}

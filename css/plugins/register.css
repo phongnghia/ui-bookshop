@@ -1,0 +1,39 @@
+.form__register{
+	 font-family: 'Poppins', sans-serif;
+	 padding: 20px 35px;
+	 border: 1px solid;
+}
+.form__register label{
+	font-size: 14px;
+}
+.form__register input[type="text"],
+.form__register input[type="password"],
+.form__register input[type="email"]{
+	width: 100%;
+	padding: 5px;
+	border: 1px solid #61616199;
+}
+.form__register input:focus{
+	outline: none;
+}
+.form__register input[type="submit"]{
+	margin: 20px 0;
+    padding: 10px;
+    width: 25%;
+    border: none;
+    color: white;
+    background: #ce7852;
+}
+.other__login a{
+	width: 50%;
+    text-align: center;
+    color: #ffffff;
+    padding: 10px;
+    text-decoration: none;
+}
+.other__login a:nth-child(1){
+	background: #6767e0;
+}
+.other__login a:nth-child(2){
+	background: #ca3b3b;
+}
