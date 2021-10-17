@@ -7,7 +7,7 @@ function loadShopGrid(){
 
 	// Get url
 
-	var url = window.location.href.split("?t=");
+	let url = window.location.href.split("?t=");
 	console.log(url[1]);
 	dem = 0;
 
@@ -18,19 +18,19 @@ function loadShopGrid(){
 		// Load title
 
 		$('title').text("Kinh tế - Tâm lý học");
-		var ol = $(`
+		let ol = $(`
 			<li class="breadcrumb-item"><a href="shop-grid.html?t=${url[1]}">Kinh tế - Tâm lý học</a></li>
 		`);
 		$('.breadcrumb').append(ol);
 	}else{
-		for(var i = 0 ; i < title.length ; i ++){
+		for(let i = 0 ; i < title.length ; i ++){
 			if(title[i].loaisach == url[1]){
 
 				// Load title
 
 				$('title').text(title[i].tenloai);
 
-				var ol = $(`
+				let ol = $(`
 					<li class="breadcrumb-item"><a href="shop-grid.html?t=${title[i].loaisach}">${title[i].tenloai}</a></li>
 				`);
 				$('.breadcrumb').append(ol);
@@ -41,12 +41,12 @@ function loadShopGrid(){
 	// Load Shop grid product
 
 	if(url[1] == "KTE_TLH"){
-		for (var i = 0 ; i < arr.length ; i++){
+		for (let i = 0 ; i < arr.length ; i++){
 			if(dem == 9){
 				continue;
 			}else{
 				if(arr[i].loaisach == "KTE" || arr[i].loaisach == "TLH"){
-					var el = $(`
+					let el = $(`
 						<div class="product__woo">
 							<div class="product__img">
 								<img src="image/product/big_img/${arr[i].img}" alt="">
@@ -71,12 +71,12 @@ function loadShopGrid(){
 		}
 		dem = 0;
 	}else{
-		for (var i = 0 ; i < arr.length ; i++){
+		for (let i = 0 ; i < arr.length ; i++){
 			if(dem == 9){
 				continue;
 			}else{
 				if(arr[i].loaisach == url[1]){
-					var el = $(`
+					let el = $(`
 						<div class="product__woo">
 							<div class="product__img">
 								<img src="image/product/big_img/${arr[i].img}" alt="">

@@ -4,19 +4,19 @@ $(document).ready(function() {
 
 });
 
-var url = window.location.href.split("?id=");
+let url = window.location.href.split("?id=");
 
 function loadSingleProduct () {
 	
 	// Get url
 	
-	// var url = window.location.href.split("?id=");
-	var getLoai;
+	// let url = window.location.href.split("?id=");
+	let getLoai;
 
 	// Load Breadcrum item
 	// Get id
 
-	for(var i = 0 ; i < arr.length ; i++){
+	for(let i = 0 ; i < arr.length ; i++){
 		if(arr[i].id == url[1]){
 
 			// Load Title
@@ -25,9 +25,9 @@ function loadSingleProduct () {
 
 			// Load Breadcrum item
 
-			for(var j = 0 ; j < title.length ; j ++){
+			for(let j = 0 ; j < title.length ; j ++){
 				if(title[j].loaisach == arr[i].loaisach){
-					var ol = $(`
+					let ol = $(`
 						<li class="breadcrumb-item"><a href="shop-grid.html?t=${arr[i].loaisach}">${title[j].tenloai}</a></li>
 						<li class="breadcrumb-item active"><a href="single-product.html?id=${arr[i].id}">${arr[i].tensach}</a></li>
 					`);
@@ -46,8 +46,8 @@ function loadSingleProduct () {
 			$('.product__tilte h5').text(arr[i].tensach);
 
 			// Price product
-			var sale = (arr[i].giamgia/100);
-			var price = $(`
+			let sale = (arr[i].giamgia/100);
+			let price = $(`
 				<label>${fomatter.format(arr[i].giagoc - (arr[i].giagoc*sale))}</label>
 				<span class="price mx-3">${fomatter.format(arr[i].giagoc)}</span>
 				<span class="sale mx-3">- ${arr[i].giamgia}%</span>
@@ -55,9 +55,9 @@ function loadSingleProduct () {
 			$('.single__price').append(price);
 
 		// Load Product details
-			for(var k = 0 ; k < details.length ; k ++){
+			for(let k = 0 ; k < details.length ; k ++){
 				if(details[k].id == arr[i].id){
-					var tr = $(`
+					let tr = $(`
 						<tr>
 							<td>Mã sản phẩm</td>
 							<td>No.0000${arr[i].id}</td>
@@ -105,12 +105,12 @@ function loadSingleProduct () {
 	// Load related product of single product 
 	
 	$('.related__product').empty();
-	for (var i = 0 ; i < arr.length ; i++){
+	for (let i = 0 ; i < arr.length ; i++){
 		if(dem == 8){
 			continue;
 		}else{
 			if(arr[i].loaisach == getLoai){
-				var el = $(`
+				let el = $(`
 					<div class="product__woo">
 						<div class="product__img">
 							<img src="image/product/big_img/${arr[i].img}" alt="">
@@ -138,10 +138,10 @@ function loadSingleProduct () {
 
 }
 function showModal(){
-	var qty = document.querySelector('.single__qty input').value;
-	for(var i = 0 ; i < arr.length ; i++){
+	let qty = document.querySelector('.single__qty input').value;
+	for(let i = 0 ; i < arr.length ; i++){
 		if(arr[i].id == url[1]){
-			var el= $(`
+			let el= $(`
 				<div class="modal__product">
 					<i class="fa fa-times close__modal" onclick="closeModal()" aria-hidden="true"></i>
 					<div class="row">

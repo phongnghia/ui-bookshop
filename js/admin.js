@@ -3,8 +3,8 @@ $(document).ready(function() {
     $('.admin__list ul li a').click(function() {
         clickAdmin(this);
     });
-    var ctx = document.getElementById('myChart').getContext('2d');
-    var myChart = new Chart(ctx, {
+    let ctx = document.getElementById('myChart').getContext('2d');
+    let myChart = new Chart(ctx, {
         type: 'bar',
         data: {
             labels: ['Văn học', 'Tiểu sử hồi ký', 'Kinh tế - Tâm lý học', 'Quản lý kinh doanh', 'Khoa học viễn tưởng', 'Văn phòng phẩm'],
@@ -46,16 +46,16 @@ function clickAdmin(obj) {
     $('.content__title h5').empty();
     $('.admin__list ul li a').removeClass('admin__active');
     $(obj).addClass('admin__active');
-    var url = $(obj).attr('href');
+    let url = $(obj).attr('href');
     $('.admin__item').hide();
     $(url).show();
-    for (var i = 0; i < tab.length; i++) {
+    for (let i = 0; i < tab.length; i++) {
         if (tab[i].code == url) {
             $('.content__title h5').text(tab[i].ten);
         }
     }
 }
-var tab = [{
+let tab = [{
         code: "#home",
         ten: "Trang chủ"
     },

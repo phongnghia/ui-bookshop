@@ -3,8 +3,8 @@ $(document).ready(function() {
 });
 function Effect(){
 	window.addEventListener("scroll",function(){
-		var header = document.querySelector('.header__sticky');
-		var cart = document.querySelector('.cart__average');
+		let header = document.querySelector('.header__sticky');
+		let cart = document.querySelector('.cart__average');
 		header.classList.toggle("sticky",window.scrollY > 0);
 		cart.classList.toggle("cart__active",window.scrollY > 0);
 	});
@@ -33,10 +33,10 @@ function Effect(){
 	// Load Giỏ hàng
 	
 	if(cart.length == 0){
-		var elsum = $(`
+		let elsum = $(`
 			<label class="py-3 mx-3">Giỏ hàng trống !</label>
 		`);
-		var footer = $(`
+		let footer = $(`
 			<label>Tổng : 0 ₫</label>
 			<a href="cart.html">Xem chi tiết</a>
 			<a href="#">Thanh toán</a>

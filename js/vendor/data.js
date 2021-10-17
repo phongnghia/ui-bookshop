@@ -1,5 +1,5 @@
 //Khởi tạo mảng
-var arr = [
+let arr = [
 	{
 		id: 1,
 		loaisach: "QLKD",
@@ -225,7 +225,7 @@ var arr = [
 		giamgia: 15
 	}
 ];
-var title = [
+let title = [
 	{
 		loaisach: "VH_TN",
 		tenloai: "Văn học trong nước"
@@ -275,7 +275,7 @@ var title = [
 		tenloai: "Văn phòng phẩm"
 	}
 ];
-var details = [
+let details = [
 	{
 		id: 1,
 		nhacc: "1980 Books",
@@ -585,8 +585,8 @@ var details = [
 		sotrang: 96
 	}
 ];
-var cart = [];
-var major = [
+let cart = [];
+let major = [
 	{
 		tacgia: "Nguyễn Nhật Ánh",
 		img: "nnanh.jpg"
