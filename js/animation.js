@@ -30,7 +30,7 @@ function Effect(){
 		$(this).addClass('active__menu');
 	});
 
-	// Load Giỏ hàng
+	// Load cart
 	
 	if(cart.length == 0){
 		let elsum = $(`

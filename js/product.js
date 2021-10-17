@@ -2,17 +2,17 @@ $(document).ready(function() {
 	loadData();
 });
 
-// BIẾN KHỞI TẠO.
+// Init variable
 
 const fomatter = new Intl.NumberFormat('vi-VI', { style: 'currency', currency: 'VND', minimumFractionDigits: 0 });
 var dem = 0;
 
-// LOAD DỮ LIỆU
+// Load data
 
 function loadData(){
 
 	let demCart = 0;
-	// LOAD SÁCH GIẢM GIÁ.
+	// Load product discount
 	$('.cart__average').text(demCart);
 
 	$('.list__sale').empty();
@@ -80,7 +80,7 @@ function loadAll(obj){
 	$('.all__product').removeClass('fadeShow');
 	$('.all__product').empty();
 	
-	//LOAD TẤT CẢ SẢN PHẨM
+	// Load all product
 
 	if(obj == null || obj == "#ALL"){
 		for (let i = 0 ; i < arr.length ; i++){

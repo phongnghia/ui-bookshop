@@ -1,4 +1,4 @@
-//Khởi tạo mảng
+// Init array
 let arr = [
 	{
 		id: 1,
